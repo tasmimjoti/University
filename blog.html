@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>University</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="sub-header">
+		<nav><a href="index.html"><img src="Images/logo.png" width="75" height="75"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html"><b>HOME</b></a></li>
+					<li><a href="about.html"><b>ABOUT</b></a></li>
+					<li><a href="course.html"><b>COURSE</b></a></li>
+					<li><a href="blog.html"><b>BLOG</b></a></li>
+					<li><a href="contact.html"><b>CONTACT</b></a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>Our certificate & online programs for 2021</h1>
+	</section>
+
+	<!--Blog page content-->
+
+	<section class="blog">
+		<div class="row">
+			<div class="blog-left">
+				<img src="Images/certificate.jpg">
+				<h2>Our certificate & online programs for 2021</h2>
+				<p>I use the knowledge and skills I learned in this institute every day. I am a part of a boutique financial advising firm in Toledo (Wilcox Financial) which was founded by a graduate from this university, Mike Wilcox. I serve as a “quarterback” for my clients assisting them with services such as asset management, retirement planning, estate planning, succession planning and risk management. Not only did the curriculum prepare me for a demanding career, but the institutional network introduced me to mentors like Mike. I owe my university so much and I am confident that those students who take their courses seriously, will be rewarded the rest of their lives.</p>
+				<br>
+				<p>- Jarrod Hirschfeld</p>
+				<br>
+				<p>My education from this university has allowed me to begin a successful and fulfilling career at Ford Motor Company. As an Economics and Supply Chain Management major I was able to acquire two internships and a full-time position, shortly after graduating, as a buyer within purchasing at Ford. As a new buyer I have been given the opportunity to participate in their college rotational program and obtain a full breadth of the various facets of the automotive industry. This focus on the fundamentals has led to my participation in helping the Ford team launch the new and innovate aluminum super duty and raptor. It is an exciting time to be at Ford because of all the new technologies coming to the market and it can be attributed to my academic journey.</p>
+				<br>
+				<p>- Clayton Stewart</p>
+				<div class="comment-box">
+					<h3>Leave a comment</h3>
+					<form class="comment-form">
+						<input type="text" placeholder="Enter name">
+						<input type="email" placeholder="Enter e-mail">
+						<textarea rows="5" placeholder="Your comment">
+						</textarea>
+						<button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+					</form>
+				</div>
+			</div>
+			<div class="blog-right">
+				<h3>Post Categories</h3>
+				<div>
+					<span>Business Analytics</span>
+					<span>21</span>
+				</div>
+				<div>
+					<span>Data Science</span>
+					<span>28</span>
+				</div>
+				<div>
+					<span>Machine Learning</span>
+					<span>15</span>
+				</div>
+				<div>
+					<span>Computer Science</span>
+					<span>34</span>
+				</div>
+				<div>
+					<span>AutoCAD</span>
+					<span>42</span>
+				</div>
+				<div>
+					<span>Journalism</span>
+					<span>22</span>
+				</div>
+				<div>
+					<span>Commerce</span>
+					<span>30</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Footer-->
+
+	<footer class="footer">
+		<h4>About us</h4>
+		<p>"Genius without education is like silver in the mine.” — Benjamin Franklin</p>
+		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+		</div>
+	</footer>
+
+	<!--JavaScript for toggle menu-->
+
+	<script>
+		var navLinks=document.getElementById('navLinks');
+		function showMenu() {
+			navLinks.style.right="0";
+		}
+		function hideMenu() {
+			navLinks.style.right="-200px";
+		}
+	</script>
+
+</body>
+</html>

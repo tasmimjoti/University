@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>University</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="sub-header">
+		<nav><a href="index.html"><img src="Images/logo.png" width="75" height="75"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html"><b>HOME</b></a></li>
+					<li><a href="about.html"><b>ABOUT</b></a></li>
+					<li><a href="course.html"><b>COURSE</b></a></li>
+					<li><a href="blog.html"><b>BLOG</b></a></li>
+					<li><a href="contact.html"><b>CONTACT</b></a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>Our Courses</h1>
+	</section>
+
+	<!--Course content-->
+
+	<section class="course">
+		<h1>Courses we offer</h1>
+		<p>We offer several courses for learning, training and research purposes.</p>
+		<div class="row">
+			<div class="course-col">
+				<h3>Intermediate</h3>
+				<p>This term is almost compulsory for all students in order to become eligible for higher studies. It's a two years course which can be studied after attaining Secondary School Certificate in the field of Engineering, Technology, Medicine, Law, Agriculture, Science and Veterinary Science, Architecture, Education (Teaching) etc.</p>
+			</div>
+			<div class="course-col">
+				<h3>Degree</h3>
+				<p>We offer both online and offline programs for this category. Work through programs and earn credit towards your degree wherever you are; you just need a smartphone, tablet or computer, and access to the internet. Complete all programs and pass all assessments, to gain an internationally recognised qualification in the fields of Language & Literature, Politics & Society, Nature & Environment, Engineering & Technology, Healthcare & Medicine etc.</p>
+			</div>
+			<div class="course-col">
+				<h3>Post-graduation</h3>
+				<p>A postgraduate degree encompasses a range of qualifications that require an undergraduate degree to be considered for entry, these include courses at Postgraduate Diploma level all the way to a PhD. Here, you'll find various courses for postgraduation in the field of Applied and Pure Sciences, Business and Management, Computer Science and IT, Engeneering, Health and Medicine and so on.</p>
+			</div>
+		</div>
+	</section>
+
+	<!--Footer-->
+
+	<footer class="footer">
+		<h4>About us</h4>
+		<p>"Genius without education is like silver in the mine.” — Benjamin Franklin</p>
+		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+		</div>
+	</footer>
+
+	<!--JavaScript for toggle menu-->
+
+	<script>
+		var navLinks=document.getElementById('navLinks');
+		function showMenu() {
+			navLinks.style.right="0";
+		}
+		function hideMenu() {
+			navLinks.style.right="-200px";
+		}
+	</script>
+
+</body>
+</html>
